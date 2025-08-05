@@ -13,6 +13,21 @@
       background-color: #e6f0ff;
       color: #333;
     }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #2b3a67;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
     header {
       background: url('sitebackground.png') no-repeat center center/cover;
       color: #fff;
@@ -118,13 +133,20 @@
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#booking">Book</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <header>
     <h1>MyNeighborhoodIT</h1>
     <p>Reliable Tech Help Right in Your Neighborhood</p>
   </header>
 
   <div class="container">
-    <h2>Services Offered</h2>
+    <h2 id="services">Services Offered</h2>
     <ul>
       <li>Home Wi-Fi Setup & Troubleshooting</li>
       <li>Printer, Email, and Device Support</li>
@@ -134,7 +156,7 @@
       <li><strong>Full Home Device Support</strong> — includes multiple users, senior assistance, and complex setups</li>
     </ul>
 
-    <h2>Pricing</h2>
+    <h2 id="pricing">Pricing</h2>
     <p><em>Pricing listed below is estimated based on typical service durations. If service exceeds the allotted time, additional hours are billed at the hourly rate in addition to the initial package price.</em></p>
 
     <table class="pricing-table">
@@ -162,13 +184,14 @@
 
     <p><strong>Hourly Rate:</strong> $45–$60 depending on service type and urgency.</p>
 
-    <h2>Booking Request Form</h2>
+    <h2 id="booking">Booking Request Form</h2>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScOHR0oFOhMkpPmE5bzUqWcsLYaQ2-Cu7I4Hi048N6cCa8HTw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-    <h2>Contact Me</h2>
+    <h2 id="contact">Contact Me</h2>
     <p>Get in touch for fast, friendly, and professional tech help.</p>
     <div class="contact-links">
-      <p><strong>Phone/Text:</strong> <a href="tel:+15206616460">(520) 661​-6460</a></p>
+      <p><strong>Phone/Text:</strong> <a href="tel:+15206616460">(520) 661‑6460</a></p>
+      <p><strong>Text Now:</strong> <a href="sms:+15206616460">Click to Text</a></p>
       <p><strong>Email:</strong> <a href="mailto:santi7perez7@gmail.com">santi7perez7@gmail.com</a></p>
       <p><strong>Fiverr Profile:</strong> <a href="https://www.fiverr.com/s/42qv1K1" target="_blank">Book on Fiverr</a></p>
     </div>
